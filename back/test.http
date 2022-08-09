@@ -1,0 +1,19 @@
+@endpoint = http://localhost:3000
+
+### Get all tasks
+GET {{endpoint}}/tasks
+
+### Create task
+POST {{endpoint}}/tasks
+Content-Type: application/x-www-form-urlencoded
+
+name=Acheter du beurre
+
+### Update task
+PUT {{endpoint}}/tasks/1
+Content-Type: application/x-www-form-urlencoded
+
+name=Revendre le beurre que je viens d'acheter
+
+### Delete task
+DELETE {{endpoint}}/tasks/1
